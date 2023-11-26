@@ -1,0 +1,25 @@
+$font-color: white;
+
+@mixin background-theme {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-30deg, #384c5c, #402953, #174858, #1d3355);
+    background-size: 200% 200%;
+    animation: gradient 30s linear infinite;
+    overflow: hidden;
+    position: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,35 @@
+@import './shared/styles/colors.scss';
+@import './shared/styles/sizes.scss';
+
+.app-container {
+    height: 100%;
+    width: calc(100%);
+    min-width: calc(2 * $side-bar-width + $content-width - 15px);
+    overflow: auto;
+
+    .app-content-container {
+        min-width: $content-width;
+        width: 100%;
+        max-width: calc(100% - 2 * $side-bar-width);
+        float: left;
+
+        .app-content {
+            width: $content-width;
+            margin: 0px auto;
+        }
+    }
+
+    .app-side-placeholder {
+        height: 100vh;
+        min-width: $side-bar-width;
+        max-width: $side-bar-width;
+        background-color: red;
+        float: left;
+        visibility: hidden;
+    }
+}
+
+.app-background {
+    @include background-theme();
+    z-index: -1;
+}
