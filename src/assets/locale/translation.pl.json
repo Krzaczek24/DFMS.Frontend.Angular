@@ -1,0 +1,72 @@
+{
+    "common": {
+        "language": {
+            "label": "Język"
+        },
+        "please-wait": "Proszę czekać",
+        "processing": "Przetwarzanie",
+        "api-status": {
+            "label": "Status API",
+            "description": {
+                "alive": "Serwer działa",
+                "dead": "Serwer jest niedostępny"
+            }
+        }
+    },
+    "navmenu": {
+        "users": "Użytkownicy",
+        "permissions": "Uprawnienia",
+        "profile": "Profil",
+        "settings": "Ustawienia",
+        "logout": "Wyloguj"
+    },
+    "guest-screen": {
+        "subtitle": "Witaj w Dynamic Forms Management System",
+        "login": "Logowanie",
+        "registration": "Rejestracja"
+    },
+    "login": {
+        "subtitle": "Logowanie do systemu",
+        "form": {
+            "username": "Nazwa użytkownika",
+            "password": "Hasło",
+            "sign-in": "Zaloguj",
+            "account-question": "Nie masz konta?",
+            "registration": "Zarejestruj się tutaj"
+        },
+        "messages": {
+            "incorrect-credentials": "Podano nieprawidłowe dane uwierzytelniające",
+            "error": "Wystąpił błąd podczas przetwarzania poświadczeń"
+        }
+    },
+    "registration": {
+        "subtitle": "Rejestracja nowego użytkownika w systemie",
+        "form": {
+            "username": "Nazwa użytkownika",
+            "password": "Hasło",
+            "repeat-password": "Powtórz hasło",
+            "email": "Adres e-mail",
+            "firstname": "Imię",
+            "lastname": "Nazwisko",
+            "register": "Zarejestruj",
+            "account-question": "Masz już konto?",
+            "login": "Zaloguj się tutaj"
+        },
+        "messages": {
+            "success": "Pomyślnie zarejestrowano konto",
+            "username-already-taken": "Wskazana nazwa użytkownika jest już zajęta",
+            "failure": "Wystąpił błąd podczas próby zarejestrowania użytkownika"
+        }
+    },
+    "validation": {
+        "required": "To pole jest obowiązkowe",
+        "password": "Hasło musi zawierać co najmniej 1 wielką literę, 1 małą literę, 1 cyfrę i 1 znak specjalny oraz musi mieć co najmniej 8 znaków",
+        "min-length": "Minimalna liczba znaków to: {{restriction}}",
+        "max-length": "Maksymalna liczba znaków to: {{restriction}}",
+        "regex": "Niepoprawna wartość",
+        "e-mail": "Niepoprawny adres e-mail",
+        "name": "Słowo należy zacząć wielką literą a skończyć małymi",
+        "the-same-as": "Wartość musi być taka sama",
+        "the-same-passwords": "Hasła nie są takie same"
+    }
+}
