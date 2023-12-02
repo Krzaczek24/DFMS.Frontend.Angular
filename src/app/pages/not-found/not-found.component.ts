@@ -5,8 +5,8 @@ import { CommonModule } from '@angular/common'
     selector: 'app-page-not-found',
     standalone: true,
     imports: [CommonModule],
-    templateUrl: './page-not-found.component.html',
-    styleUrl: './page-not-found.component.scss'
+    templateUrl: './not-found.component.html',
+    styleUrl: './not-found.component.scss'
 })
 export class PageNotFoundComponent {
 
