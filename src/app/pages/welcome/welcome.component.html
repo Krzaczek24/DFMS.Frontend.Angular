@@ -1,31 +1,6 @@
-<div class="welcome-component">
-    <div class="guest-grid">
-        <div class="row guest-logo">
-            <div class="col">
-                <a href="/">
-                    <span class="logo">DFMS</span>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <span class="guest-subtitle">{{ 'guest-screen.subtitle' | translate }}</span>
-            </div>
-        </div>
-        <div class="justify-content-md-center pt-5">
-            <div class="col">
-                <a href="/login">
-                    <label class="btn-success" ngbButtonLabel>t("guest-screen.login")</label>
-                </a>
-            </div>
-            <div class="col">
-                <a href="/registration">
-                    <button class="secondary lg w-100">t("guest-screen.registration")</button>
-                </a>
-            </div>
-            <h1 class="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-        </div>
-    </div>
+<div class="grid grid-cols-2 gap-4">
+    <a class="logo col-span-2" href="/">DFMS</a>
+    <span class="text-2xl col-span-2 text-center pb-4">{{ 'guest-screen.subtitle' | translate }}</span>
+    <a class="btn btn-blue w-100" href="/login">{{ 'guest-screen.login' | translate }}</a>
+    <a class="btn btn-blue w-100" href="/registration">{{ 'guest-screen.registration' | translate }}</a>
 </div>

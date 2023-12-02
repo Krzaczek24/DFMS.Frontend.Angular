@@ -3,5 +3,9 @@
     "typescript.preferences.quoteStyle": "single",
     "editor.formatOnSave": true,
     "editor.autoIndent": "full",
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "scss.lint.unknownAtRules": "ignore"
 }

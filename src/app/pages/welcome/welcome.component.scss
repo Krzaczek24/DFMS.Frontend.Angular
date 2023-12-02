@@ -1,53 +1,21 @@
-.welcome-component {
+:host {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: fit-content;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
-    height: 100%;
-    text-align: center;
+    .logo {
+        @apply text-black;
+        font-family: 'AppleTea';
+        text-shadow: 0.01em .01em darkgray;
+        font-size: 16rem;
+        line-height: 0.6;
+        transition: color 0.5s ease-in-out;
 
-    .guest-grid {
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        width: fit-content;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
-        .guest-logo {
-            text-align: center;
-            overflow: hidden;
-            height: 234px;
-            -webkit-user-select: none;
-            user-select: none;
-
-            a {
-                color: inherit;
-                text-decoration: inherit;
-            }
-
-            .logo {
-                font-size: 16em;
-                line-height: normal;
-            }
-        }
-
-        .guest-subtitle {
-            font-size: 1.5em;
-            text-align: center;
-            color: white;
+        &:hover {
+            @apply text-neutral-900;
         }
     }
-}
-
-.form-link {
-    font-weight: bold;
-    text-decoration: none;
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-.logo {
-    font-family: 'AppleTea';
-    color: #111111;
-    text-shadow: 0.01em .01em darkgray;
 }

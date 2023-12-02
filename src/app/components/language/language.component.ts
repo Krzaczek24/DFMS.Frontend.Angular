@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
-import { Language } from '../../shared/language'
+import { Language } from '../../shared/constants/language'
+import { LocalStorageService } from '../../shared/services/local-storage.service'
 
 @Component({
     selector: 'app-language',
@@ -9,7 +10,8 @@ import { Language } from '../../shared/language'
 })
 export class LanguageComponent {
     constructor(
-        private translateService: TranslateService
+        private translateService: TranslateService,
+        private localStorage: LocalStorageService
     ) {
 
     }
@@ -20,5 +22,6 @@ export class LanguageComponent {
 
     setLanguage(language: Language) {
         this.translateService.use(language)
+        this.localStorage.setLanguage(language)
     }
 }

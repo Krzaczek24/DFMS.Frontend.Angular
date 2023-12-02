@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
-import { Language, languages } from './shared/language'
+import { languages } from './shared/constants/language'
+import { LocalStorageService } from './shared/services/local-storage.service'
 
 @Component({
     selector: 'app-root',
@@ -11,14 +12,21 @@ export class AppComponent implements OnInit {
     title = 'Dynamic Forms Management System'
 
     constructor(
-        private translateService: TranslateService
+        private translateService: TranslateService,
+        private localStorage: LocalStorageService
     ) {
         this.translateService.addLangs(languages)
         this.translateService.setDefaultLang(languages[0])
 
-        const browserLang = this.translateService.getBrowserLang()
-        if (browserLang && languages.includes(browserLang)) {
-            this.translateService.use(browserLang)
+        const savedLanguage = this.localStorage.getLanguage()
+        if (savedLanguage) {
+            this.translateService.use(savedLanguage)
+        }
+        else {
+            const browserLang = this.translateService.getBrowserLang()
+            if (browserLang && languages.includes(browserLang)) {
+                this.translateService.use(browserLang)
+            }
         }
     }
 

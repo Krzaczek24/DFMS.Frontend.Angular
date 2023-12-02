@@ -3,8 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './app/shared/styles/colors.scss';
-
 @font-face {
     font-family: 'AppleTea';
     src: url(./assets/fonts/AppleTea.ttf);
@@ -18,5 +16,17 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    color: $font-color;
+    @apply text-white;
+}
+
+.btn {
+    @apply text-xl py-2 px-4 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-700 text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-500;
 }
