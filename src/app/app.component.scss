@@ -33,3 +33,9 @@
     @include background-theme();
     z-index: -1;
 }
+
+app-language {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}

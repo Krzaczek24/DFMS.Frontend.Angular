@@ -1,0 +1,38 @@
+$height: 36px;
+$width: $height * 4 / 3;
+
+.flags-container {
+    display: flex;
+    gap: 16px;
+    padding-right: 8px;
+
+    .flag {
+        cursor: pointer;
+        height: $height;
+        width: $width;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+
+        &.around {
+            width: $height;
+            border-radius: 50%;
+        }
+
+        &.active {
+            outline: 3px solid purple;
+        }
+    }
+
+    .en {
+        background-image: url('/assets/images/flags/gb.svg');
+    }
+
+    .pl {
+        background-image: url('/assets/images/flags/pl.svg');
+    }
+
+    .ua {
+        background-image: url('/assets/images/flags/ua.svg');
+    }
+}
